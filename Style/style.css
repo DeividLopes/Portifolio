@@ -247,7 +247,7 @@ a {
         
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 483px) {
     h1 {
         font-size: 2.2rem;
     }
