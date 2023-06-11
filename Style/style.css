@@ -246,9 +246,8 @@ a {
 
         
 }
-
 @media only screen and (max-width: 483px) {
-    h1 {
+        h1 {
         font-size: 2.2rem;
     }
     p{
@@ -283,5 +282,5 @@ a {
 
     }
 
-
+        
 }
