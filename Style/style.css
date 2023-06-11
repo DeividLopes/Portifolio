@@ -1,0 +1,287 @@
+/* main */
+main{
+    margin-left: 5%;
+}
+
+/* Nav */
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+/* background-image: linear-gradient(135deg, #bb95ff 0, #7478ff 25%, #0059ff 50%, #003bc4 75%, #00228e 100%); */
+background-color: white;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-right: 1rem; 
+    padding-top: 5%;
+
+}
+.menu ul li :hover{
+    background-color: #7478ff;
+    color: aliceblue;
+}
+
+
+
+/* header */
+.headerLeft{
+    margin-top: 5%;
+    width: 100%;
+}
+
+.headerLeft p{
+    /* width: 50%; */
+    line-height: 200%;
+    max-width: 50rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+}
+.deivid{
+    border-radius: 20%;
+    max-width: 100%;
+}
+
+/* Habilidades */
+.habilidades{
+    margin-top: 10%
+}
+
+.containerH{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+    gap: 5rem;
+}
+
+.arrow {
+    margin-top: 600%;
+    cursor: pointer;
+}
+
+
+.containerH h2{
+    display: flex;
+    justify-content: center;
+
+}
+
+.descricaoH {
+    max-height: 300px;
+    overflow: auto;
+    line-height: 1.5;
+}
+
+/* Sobre */
+
+.sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-top: 10%;
+}
+
+/* Projetos */
+.projetos{
+    margin-top: 10%;
+}
+
+.card {
+    flex-basis: calc(100%/3 - 20px);
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 300px;
+
+}
+
+.card h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.card p {
+    margin-top: 10px 0;
+}
+
+.card a {
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+
+/* Footer */
+.footer{
+    background-color: var(--primary-color);
+    ;
+    
+}
+
+.footer li {
+    display: inline-block;
+    padding-left: 5%;
+    
+}
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 12px
+}
+
+/* Card */
+
+
+
+/* Global */
+spam{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+:root {
+    --white: #ffffff;
+    --gray: #d9d9d9;
+    --black: #000000;
+    --primary-color: #02073e;
+    --secondary-color: #0f2137;
+    --dark-secondary-color: #3c415c;
+    --tertiary-color: #a6b1e1;
+    --light-tertiary-color: #f3f6fb;
+    --text-color: #343d48;
+
+    --font-family: 'DM Sans', sans-serif;
+}
+
+p,
+.p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+text-align: justify
+}
+
+p:not(:last-of-type),
+.p:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 60%;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 58%;
+    }
+
+    .max-width {
+        padding: 0 2rem;
+    }
+
+        
+}
+
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    p{
+        font-size: 1.0rem;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .sobre {
+    display: block;
+    }
+
+    .habilidades input{
+        width: 10px;
+          
+    }
+
+    .menu a{
+            font-size: 11px;
+    }
+
+    .menu img{
+        width: 60%;
+        
+    }
+
+    .deivid{
+        width: 80%;
+        margin-left: 20%;
+
+    }
+
+
+}
